@@ -1,0 +1,36 @@
+<div class="container">
+    <a href="main"><img src="../assets/back_button.png" alt=""></a>
+    <div class="main_flex">
+        <img src="{{video?.snippet?.thumbnails?.standard?.url}}" alt="">
+        <div class="information">
+            <div class="text_info">
+                <div class="titltes">
+                    <p class="title">
+                        {{video?.snippet?.title}}
+                    </p>
+                    <p class="time">
+                        {{video?.snippet?.publishedAt | date:'fullDate'}}
+                    </p>
+                </div>
+                <div class="full_info">
+                    <p class="description">
+                        Description:
+                    </p>
+                    <p class="desc_info">
+                        {{video?.snippet?.description}}
+                    </p>
+                </div>
+            </div>
+            <div class="statistics">
+                <img  src="../assets/viewed.svg" alt="viewed">
+                <div class="views">{{video?.statistics?.viewCount}}</div>
+                <img src="../assets/liked.svg" alt="liked">
+                <div class="likes">{{video?.statistics?.likeCount}}</div>
+                <img src="../assets/dislike.svg" alt="dislike">
+                <div class="dislikes">{{video?.statistics?.dislikeCount}}</div>
+                <img src="../assets/comments.svg" alt="comments">
+                <div class="comments">{{video?.statistics?.commentCount}}</div>
+            </div>
+        </div>
+    </div>
+</div>

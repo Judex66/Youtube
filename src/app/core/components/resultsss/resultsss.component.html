@@ -1,0 +1,6 @@
+<div class="res">
+    <app-result-item  *ngFor="let video of videos |orderBy:listKey:isReverce |filter:searching" 
+    [videos]="video">
+    </app-result-item>
+</div>
+

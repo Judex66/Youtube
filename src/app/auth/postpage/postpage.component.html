@@ -1,0 +1,42 @@
+<div class="section">
+    <form class="login_container" #postForm="ngForm">
+        <div class="create">Create new card</div>
+        <div class="info">
+            <div> 
+                <label for="title">Title</label>
+            </div>
+            <input type="text" name="title" [(ngModel)]="title" [formControl]="titleControl"  required />
+            <div class="mistake" [hidden]="titleControl.valid || !titleControl.touched">
+                Укажите Титульник
+            </div>
+        </div>
+        <div class="info">
+            <div> 
+                <label for="discription">Discription</label>
+            </div>
+            <input type="text" name="Discriptionrr2r23.tilte" [(ngModel)]="discription" [formControl]="discriptionControl" required>
+            <div class="mistake" [hidden]="discriptionControl.valid || !discriptionControl.touched">
+                Введите описание 
+            </div>
+        </div>
+        <div class="info">
+            <div> 
+                <label for="Img">Img</label>
+            </div>
+            <input type="text" name="img" [(ngModel)]="img" [formControl]="imgControl"  required>
+            <div class="mistake" [hidden]="imgControl.valid || !imgControl.touched">
+                Введите ссылку 
+            </div>
+        </div>
+        <div class="info">
+            <div> 
+                <label for="discription">Link video</label>
+            </div>
+            <input type="text" name="Link" [(ngModel)]="link" [formControl]="linkControl" required>
+            <div class="mistake" [hidden]="linkControl.valid || !linkControl.touched">
+                Введите ссылку 
+            </div>
+        </div>
+        <button type="submit" id="creat" (click)="postVideo()">Creat card</button>
+    </form>    
+</div>

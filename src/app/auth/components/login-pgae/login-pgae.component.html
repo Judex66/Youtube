@@ -1,0 +1,27 @@
+<div class="section">
+    <form class="login_container" #userForm="ngForm">
+        <div class="login">Login</div>
+        <div class="info">
+            <div> 
+                <label for="email">Email</label>
+            </div>
+            <input [formControl]="nameControl"  type="name" id="email" name="email" min="4" required />
+            <div class="mistake" [hidden]="nameControl.valid || !nameControl.touched">
+                Укажите почту
+            </div>
+        </div>
+        <div class="info">
+            <div> 
+                <label for="password">Password</label>
+            </div>
+            <input [formControl]="passswordControl" type="password" id="password" name="password" min="4" required>
+            <div class="mistake" [hidden]="passswordControl.valid || !passswordControl.touched">
+                Введите пароль 
+            </div>
+        </div>
+        <div class="login_choice">
+            <a href="registration">Creat account</a>
+            <a routerLink="/main"><button type="submit" id="Login" (click)="addName()">Login</button></a>
+        </div>
+    </form>    
+</div>

@@ -1,0 +1,21 @@
+.sort_container{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+button{
+    height: 23px;
+    border: none;
+    background-color: #E5E5E5;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-decoration-line: underline;
+color: #2F80ED;
+}
+button:hover{
+    font-size: 15px;
+}

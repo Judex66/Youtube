@@ -1,0 +1,19 @@
+<header class="header" ng-controller="contact">
+    <div class="search_cont">
+        <a href="post">
+            <button>Post</button>
+        </a>
+        <a href="main"><button id="retern">
+            <img src="../assets/logo.svg" alt="">
+        </button>
+    </a>    
+        <input  type="text" class="formcontrol" placeholder="Search..." [(ngModel)]="searchValue">
+        <button class="search" (click)="onSearchSubmit()">search</button>
+        <button class="show" (click)="onToggleSettings()"><img src="../assets/search_settings.svg" alt=""></button>
+    </div>
+    <div class="login_items">
+        <div class="login">{{name}}</div>
+        <a routerLink=""><img class="img" src="../assets/Subtract.svg" alt=""></a>
+        <a routerLink=""> <button class="remove" (click)="logout()">Exit</button></a>
+    </div>
+</header>

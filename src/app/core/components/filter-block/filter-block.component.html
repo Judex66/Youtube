@@ -1,0 +1,7 @@
+<div class="sort_container" *ngIf="isShowSetting">
+    <div>Sorting by:</div>
+    <button (click)="getKey('statistics.dislikeCount')">dislikeCount</button>
+    <button (click)="getKey('statistics.likeCount')">likeCount</button>
+    <button (click)="getKey('statistics.viewCount')">viewCount</button>
+    <button (click)="getKey('statistics.commentCount')">commentCount</button>
+</div>

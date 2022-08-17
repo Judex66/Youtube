@@ -1,0 +1,15 @@
+<div class="card" [appTimeColor]="videos.snippet.publishedAt">
+    <img class="main_img" src="{{videos.snippet.thumbnails.medium.url}}" alt="">
+    <div class="statistics">
+        <button class="commentes"><img  src="../assets/viewed.svg" alt="viewed"></button>
+        <div class="views">{{videos.statistics.viewCount}}</div>
+        <button class="commentes"><img src="../assets/liked.svg" alt="liked"></button>
+        <div class="likes">{{videos.statistics.likeCount}}</div>
+        <button class="commentes"><img src="../assets/dislike.svg" alt="dislike"></button>
+        <div class="dislikes">{{videos.statistics.dislikeCount}}</div>
+        <button class="commentes"><img src="../assets/comments.svg" alt="comments"></button>
+        <div class="comments">{{videos.statistics.commentCount}}</div>
+    </div>
+    <div class="titile">{{videos.snippet.title}}</div> 
+    <a [routerLink]="['fullinfo', videos.id]">  <button id="more" >more...</button></a>
+</div>
